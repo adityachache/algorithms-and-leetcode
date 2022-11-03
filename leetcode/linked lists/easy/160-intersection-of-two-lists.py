@@ -23,19 +23,45 @@ class Solution:
         
         return None             # if you don't find any node in hash table then return None since the 
                                 # second list doesn't intersect the first
+      
+
+
+# O(1) space complexity approach  
+# first = headA
+#         second = headB
+        
+#         length1 = 0
+#         length2 = 0
         
         
-        # brute force with O(1) memory doesn't work (time limit exceeded)
-#         l1 = headA
-#         l2 = headB
-        
-#         while l1:
-#             while l2:
-#                 if l1 == l2:
-#                     return l1
-#                 l2 = l2.next
-#             l1 = l1.next
-#             l2 = headB
+#         while first:
+#             length1 += 1
+#             first = first.next
             
-#         return None
+#         while second:
+#             length2 += 1
+#             second = second.next
+            
+#         if first != second:
+#             return None
+#         else:
+            
+#             first = headA
+#             second = headB
+            
+#             if length1 > length2:
+#                 diff = length1 - length2
+#                 for i in range(diff):
+#                     first = first.next 
+#             else:
+#                 diff = length2 - length1
+#                 for i in range(diff):
+#                     second = second.next
+                    
+#             while first!= second:
+#                 first =first.next
+#                 second = second.next
+                
+#             return first
+
         
